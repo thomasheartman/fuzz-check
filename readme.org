@@ -11,14 +11,10 @@
 
 #+BEGIN_SRC js
   import { fuzz, fc } from "@t-hart/fuzz-check";
-    // examples
 
-    // using the fuzz wrapper
-  describe("Basic functionality tests", () => {
-    const square = (n: number) => n * n;
-
-    it("runs a test using `fuzz`", () => {
-      fuzz(fc.integer())((n: number) => expect(square(n)).toEqual(n * n));
+  describe("Your tests go here", () => {
+    it("subtracts a number from itself", () => {
+      fuzz(fc.integer())((n: number) => expect(n - n).toEqual(0));
     });
   });
 #+END_SRC
