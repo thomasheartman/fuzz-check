@@ -2,9 +2,11 @@
   Thin wrapper for certain parts of the [[https://github.com/dubzzz/fast-check][fast-check package]]. It currently only supports property tests.
 
 ** Usage
-   ```sh
+
+#+BEGIN_SRC sh
    npm i -D @t-hart/fuzz-check
-  ```
+#+END_SRC
+
   In your test files:
 
 #+BEGIN_SRC js
