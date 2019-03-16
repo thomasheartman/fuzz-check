@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
     "declaration": true,
-    "esModuleInterop": true,
-    "lib": ["es2017", "dom"],
-    "module": "es6",
-    "moduleResolution": "node",
+    "module": "commonjs",
     "newLine": "lf",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
@@ -16,5 +12,6 @@
     "strict": true,
     "target": "es5"
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["**/*.test.ts"]
 }
