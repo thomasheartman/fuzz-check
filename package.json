@@ -1,6 +1,6 @@
 {
   "name": "fuzz-check",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A thin wrapper for fast-check to make it easier to use",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

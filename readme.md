@@ -13,7 +13,7 @@ npm i -D fuzz-check
 In your test files:
 
 ``` javascript
-import { fuzz, fc } from "@t-hart/fuzz-check";
+import { fuzz, fc } from "fuzz-check";
 
 describe("Your tests go here", () => {
   it("subtracts a number from itself", () => {
