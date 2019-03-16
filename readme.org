@@ -4,7 +4,7 @@
 ** Usage
 
 #+BEGIN_SRC sh
-   npm i -D @t-hart/fuzz-check
+   npm i -D fuzz-check
 #+END_SRC
 
   In your test files:
