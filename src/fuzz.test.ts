@@ -14,3 +14,24 @@ describe("Basic functionality tests", () => {
     natFuzz((n: number) => expect(n - n).toEqual(0));
   });
 });
+
+describe("Readme tests", () => {
+  const square = (n: number) => n * n;
+
+  it("runs a test the verbose way", () => {
+    fc.assert(
+      fc.property(fc.integer(), (n: number) => {
+        expect(square(n)).toEqual(n * n);
+      }),
+    );
+  });
+
+  it("runs a test using `fuzz`", () => {
+    fuzz(fc.integer())((n: number) => expect(square(n)).toEqual(n * n));
+  });
+
+  const expectSquare = (n: number) => expect(square(n)).toEqual(n * n);
+  it("accepts predefined assertions", () => {
+    fuzz(fc.integer())(expectSquare);
+  });
+});
