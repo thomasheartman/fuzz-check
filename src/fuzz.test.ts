@@ -1,5 +1,4 @@
-import { fuzz } from "./fuzz";
-import fc from "fast-check";
+import { fuzz, fc } from "./index";
 
 describe("Basic functionality tests", () => {
   it("fuzzes integers", () => {
