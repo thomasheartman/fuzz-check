@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "A thin wrapper for fast-check to make it easier to use",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "devDependencies": {
     "eslint": "^5.15.2",
     "eslint-config-prettier": "^4.1.0",
@@ -19,6 +23,7 @@
     "fast-check": "^1.12.0"
   },
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "keywords": [
