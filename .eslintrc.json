@@ -1,0 +1,6 @@
+{
+  "extends": ["prettier"],
+  "env": {
+    "es6": true
+  }
+}
