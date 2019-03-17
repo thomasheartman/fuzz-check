@@ -1,12 +1,16 @@
 {
   "name": "fuzz-check",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A thin wrapper for fast-check to make it easier to use",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/t-hart/fuzz-check.git"
+  },
   "devDependencies": {
     "eslint": "^5.15.2",
     "eslint-config-prettier": "^4.1.0",
